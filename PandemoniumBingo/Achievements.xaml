@@ -1,0 +1,116 @@
+﻿<Window x:Class="PandemoniumBingo.Achievements" Style="{DynamicResource ResourceKey=WindowDefaultStyle}"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PandemoniumBingo"
+        mc:Ignorable="d"
+        Title="Pandemonium Bingo" Height="600" Width="800" ResizeMode="CanMinimize" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="99*"/>
+        </Grid.RowDefinitions>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="774" Height="545" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Grid.ColumnSpan="2" Template="{DynamicResource ListBoxControlTemplate1}">
+            <Grid x:Name="Grid" Height="82" Width="739">
+                <Label x:Name="AchievementTitle" Content="Oozora Subaru" HorizontalAlignment="Left" Margin="10,10,-11,0" VerticalAlignment="Top" Height="40" Width="740" FontFamily="/PandemoniumBingo;component/Fonts/#Montserrat ExtraBold" FontSize="22"/>
+                <TextBlock x:Name="AchievementDescription" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Zdobądź 12 bingo" VerticalAlignment="Top" Margin="10,50,0,0" Height="25" Width="602" FontSize="14" Foreground="White" Visibility="Hidden"/>
+                <Button x:Name="AchievementButton" Content="Spoiler" HorizontalAlignment="Left" Margin="617,50,0,0" VerticalAlignment="Top" Width="112" Height="25" Template="{DynamicResource ButtonTemplate}" Click="AchievementButton_Click"/>
+            </Grid>
+            <Grid Height="{Binding Height, ElementName=Grid}" Width="{Binding Width, ElementName=Grid}">
+                <Label x:Name="AchievementTitle1" Content="Skeletonek Website" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="40" Width="740" FontFamily="/PandemoniumBingo;component/Fonts/#Montserrat ExtraBold" FontSize="22"/>
+                <TextBlock x:Name="AchievementDescription1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Narysuj S z bingo i wciśnij Shift + L" VerticalAlignment="Top" Margin="{Binding Margin, ElementName=AchievementDescription}" Height="40" Width="{Binding Width, ElementName=AchievementDescription}" FontSize="14" Visibility="Hidden" Foreground="{Binding Foreground, ElementName=AchievementDescription}"/>
+                <Button x:Name="AchievementButton1" Content="Spoiler" HorizontalAlignment="Left" Margin="{Binding Margin, ElementName=AchievementButton}" VerticalAlignment="Top" Width="{Binding Width, ElementName=AchievementButton}" Height="{Binding Height, ElementName=AchievementButton}" Template="{DynamicResource ButtonTemplate}" Click="AchievementButton_Click"/>
+            </Grid>
+            <Grid Height="{Binding Height, ElementName=Grid}" Width="{Binding Width, ElementName=Grid}">
+                <Label x:Name="AchievementTitle2" Content="Team Deutsch Owner" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="40" Width="740" FontFamily="/PandemoniumBingo;component/Fonts/#Montserrat ExtraBold" FontSize="22"/>
+                <TextBlock x:Name="AchievementDescription2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Narysuj H z bingo i wciśnij Shift + L" VerticalAlignment="Top" Margin="{Binding Margin, ElementName=AchievementDescription}" Height="40" Width="{Binding Width, ElementName=AchievementDescription}" FontSize="14" Visibility="Hidden" Foreground="{Binding Foreground, ElementName=AchievementDescription}"/>
+                <Button x:Name="AchievementButton2" Content="Spoiler" HorizontalAlignment="Left" Margin="{Binding Margin, ElementName=AchievementButton}" VerticalAlignment="Top" Width="{Binding Width, ElementName=AchievementButton}" Height="{Binding Height, ElementName=AchievementButton}" Template="{DynamicResource ButtonTemplate}" Click="AchievementButton_Click"/>
+            </Grid>
+            <Grid Height="{Binding Height, ElementName=Grid}" Width="{Binding Width, ElementName=Grid}">
+                <Label x:Name="AchievementTitle3" Content="&gt;&gt; MaCio &lt;&lt;" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="40" Width="740" FontFamily="/PandemoniumBingo;component/Fonts/#Montserrat ExtraBold" FontSize="22"/>
+                <TextBlock x:Name="AchievementDescription3" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Narysuj M z bingo i wciśnij Shift + L" VerticalAlignment="Top" Margin="{Binding Margin, ElementName=AchievementDescription}" Height="40" Width="{Binding Width, ElementName=AchievementDescription}" FontSize="14" Visibility="Hidden" Foreground="{Binding Foreground, ElementName=AchievementDescription}"/>
+                <Button x:Name="AchievementButton3" Content="Spoiler" HorizontalAlignment="Left" Margin="{Binding Margin, ElementName=AchievementButton}" VerticalAlignment="Top" Width="{Binding Width, ElementName=AchievementButton}" Height="{Binding Height, ElementName=AchievementButton}" Template="{DynamicResource ButtonTemplate}" Foreground="{Binding Foreground, ElementName=AchievementDescription}" Click="AchievementButton_Click"/>
+            </Grid>
+            <Grid Height="{Binding Height, ElementName=Grid}" Width="{Binding Width, ElementName=Grid}">
+                <Label x:Name="AchievementTitle4" Content="Ford Fiesta Mk6 FunPage" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="40" Width="740" FontFamily="/PandemoniumBingo;component/Fonts/#Montserrat ExtraBold" FontSize="22"/>
+                <TextBlock x:Name="AchievementDescription4" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Narysuj K z bingo i wciśnij Shift + L" VerticalAlignment="Top" Margin="{Binding Margin, ElementName=AchievementDescription}" Height="40" Width="{Binding Width, ElementName=AchievementDescription}" FontSize="14" Visibility="Hidden" Foreground="{Binding Foreground, ElementName=AchievementDescription}"/>
+                <Button x:Name="AchievementButton4" Content="Spoiler" HorizontalAlignment="Left" Margin="{Binding Margin, ElementName=AchievementButton}" VerticalAlignment="Top" Width="{Binding Width, ElementName=AchievementButton}" Height="{Binding Height, ElementName=AchievementButton}" Template="{DynamicResource ButtonTemplate}" Foreground="{Binding Foreground, ElementName=AchievementDescription}" Click="AchievementButton_Click"/>
+            </Grid>
+            <Grid Height="{Binding Height, ElementName=Grid}" Width="{Binding Width, ElementName=Grid}">
+                <Label x:Name="AchievementTitle5" Content="Gestobrody Filozof" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="40" Width="740" FontFamily="/PandemoniumBingo;component/Fonts/#Montserrat ExtraBold" FontSize="22"/>
+                <TextBlock x:Name="AchievementDescription5" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Narysuj Ł z bingo i wciśnij Shift + L" VerticalAlignment="Top" Margin="{Binding Margin, ElementName=AchievementDescription}" Height="40" Width="{Binding Width, ElementName=AchievementDescription}" FontSize="14" Visibility="Hidden" Foreground="{Binding Foreground, ElementName=AchievementDescription}"/>
+                <Button x:Name="AchievementButton5" Content="Spoiler" HorizontalAlignment="Left" Margin="{Binding Margin, ElementName=AchievementButton}" VerticalAlignment="Top" Width="{Binding Width, ElementName=AchievementButton}" Height="{Binding Height, ElementName=AchievementButton}" Template="{DynamicResource ButtonTemplate}" Foreground="{Binding Foreground, ElementName=AchievementDescription}" Click="AchievementButton_Click"/>
+            </Grid>
+            <Grid Height="{Binding Height, ElementName=Grid}" Width="{Binding Width, ElementName=Grid}">
+                <Label x:Name="AchievementTitle6" Content="McŁowicz" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="40" Width="740" FontFamily="/PandemoniumBingo;component/Fonts/#Montserrat ExtraBold" FontSize="22"/>
+                <TextBlock x:Name="AchievementDescription6" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Narysuj odwróconą szachownicę z bingo i wciśnij Shift + L" VerticalAlignment="Top" Margin="{Binding Margin, ElementName=AchievementDescription}" Height="40" Width="{Binding Width, ElementName=AchievementDescription}" FontSize="14" Visibility="Hidden" Foreground="{Binding Foreground, ElementName=AchievementDescription}"/>
+                <Button x:Name="AchievementButton6" Content="Spoiler" HorizontalAlignment="Left" Margin="{Binding Margin, ElementName=AchievementButton}" VerticalAlignment="Top" Width="{Binding Width, ElementName=AchievementButton}" Height="{Binding Height, ElementName=AchievementButton}" Template="{DynamicResource ButtonTemplate}" Foreground="{Binding Foreground, ElementName=AchievementDescription}" Click="AchievementButton_Click"/>
+            </Grid>
+            <Grid Height="{Binding Height, ElementName=Grid}" Width="{Binding Width, ElementName=Grid}">
+                <Label x:Name="AchievementTitle7" Content="You are a Pirate!" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="40" Width="740" FontFamily="/PandemoniumBingo;component/Fonts/#Montserrat ExtraBold" FontSize="22"/>
+                <TextBlock x:Name="AchievementDescription7" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Narysuj X z bingo i wciśnij Shift + L" VerticalAlignment="Top" Margin="{Binding Margin, ElementName=AchievementDescription}" Height="40" Width="{Binding Width, ElementName=AchievementDescription}" FontSize="14" Visibility="Hidden" Foreground="{Binding Foreground, ElementName=AchievementDescription}"/>
+                <Button Content="Spoiler" HorizontalAlignment="Left" Margin="{Binding Margin, ElementName=AchievementButton}" VerticalAlignment="Top" Width="{Binding Width, ElementName=AchievementButton}" Height="{Binding Height, ElementName=AchievementButton}" Template="{DynamicResource ButtonTemplate}" Click="AchievementButton_Click"/>
+            </Grid>
+            <Grid Height="{Binding Height, ElementName=Grid}" Width="{Binding Width, ElementName=Grid}">
+                <Label x:Name="AchievementTitle8" Content="Michał Budzyński" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="40" Width="740" FontFamily="/PandemoniumBingo;component/Fonts/#Montserrat ExtraBold" FontSize="22"/>
+                <TextBlock x:Name="AchievementDescription8" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Narysuj + z bingo i wciśnij Shift + L" VerticalAlignment="Top" Margin="{Binding Margin, ElementName=AchievementDescription}" Height="40" Width="{Binding Width, ElementName=AchievementDescription}" FontSize="14" Visibility="Hidden" Foreground="{Binding Foreground, ElementName=AchievementDescription}"/>
+                <Button Content="Spoiler" HorizontalAlignment="Left" Margin="{Binding Margin, ElementName=AchievementButton}" VerticalAlignment="Top" Width="{Binding Width, ElementName=AchievementButton}" Height="{Binding Height, ElementName=AchievementButton}" Template="{DynamicResource ButtonTemplate}" Click="AchievementButton_Click"/>
+            </Grid>
+            <Grid Height="{Binding Height, ElementName=Grid}" Width="{Binding Width, ElementName=Grid}">
+                <Label x:Name="AchievementTitle9" Content="Creeper, Aw man" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="40" Width="740" FontFamily="/PandemoniumBingo;component/Fonts/#Montserrat ExtraBold" FontSize="22"/>
+                <TextBlock x:Name="AchievementDescription9" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Narysuj Creeper'a z bingo i wciśnij Shift + L" VerticalAlignment="Top" Margin="{Binding Margin, ElementName=AchievementDescription}" Height="40" Width="{Binding Width, ElementName=AchievementDescription}" FontSize="14" Visibility="Hidden" Foreground="{Binding Foreground, ElementName=AchievementDescription}"/>
+                <Button Content="Spoiler" HorizontalAlignment="Left" Margin="{Binding Margin, ElementName=AchievementButton}" VerticalAlignment="Top" Width="{Binding Width, ElementName=AchievementButton}" Height="{Binding Height, ElementName=AchievementButton}" Template="{DynamicResource ButtonTemplate}" Click="AchievementButton_Click"/>
+            </Grid>
+            <Grid Height="{Binding Height, ElementName=Grid}" Width="{Binding Width, ElementName=Grid}">
+                <Label x:Name="AchievementTitle10" Content="Internet anthem" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="40" Width="740" FontFamily="/PandemoniumBingo;component/Fonts/#Montserrat ExtraBold" FontSize="22"/>
+                <TextBlock x:Name="AchievementDescription10" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Naciśnij Shift+L przy pustym Bingo" VerticalAlignment="Top" Margin="{Binding Margin, ElementName=AchievementDescription}" Height="40" Width="{Binding Width, ElementName=AchievementDescription}" FontSize="14" Visibility="Hidden" Foreground="{Binding Foreground, ElementName=AchievementDescription}"/>
+                <Button Content="Spoiler" HorizontalAlignment="Left" Margin="{Binding Margin, ElementName=AchievementButton}" VerticalAlignment="Top" Width="{Binding Width, ElementName=AchievementButton}" Height="{Binding Height, ElementName=AchievementButton}" Template="{DynamicResource ButtonTemplate}" Click="AchievementButton_Click"/>
+            </Grid>
+            <Grid Height="{Binding Height, ElementName=Grid}" Width="{Binding Width, ElementName=Grid}">
+                <Label x:Name="AchievementTitle11" Content="7SoS" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="40" Width="740" FontFamily="/PandemoniumBingo;component/Fonts/#Montserrat ExtraBold" FontSize="22"/>
+                <TextBlock x:Name="AchievementDescription11" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Naciśnij Ctrl+Shift+7 w Bingo" VerticalAlignment="Top" Margin="{Binding Margin, ElementName=AchievementDescription}" Height="40" Width="{Binding Width, ElementName=AchievementDescription}" FontSize="14" Visibility="Hidden" Foreground="{Binding Foreground, ElementName=AchievementDescription}"/>
+                <Button Content="Spoiler" HorizontalAlignment="Left" Margin="{Binding Margin, ElementName=AchievementButton}" VerticalAlignment="Top" Width="{Binding Width, ElementName=AchievementButton}" Height="{Binding Height, ElementName=AchievementButton}" Template="{DynamicResource ButtonTemplate}" Click="AchievementButton_Click"/>
+            </Grid>
+            <Grid Height="{Binding Height, ElementName=Grid}" Width="{Binding Width, ElementName=Grid}">
+                <Label x:Name="AchievementTitle12" Content="Nice" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="40" Width="740" FontFamily="/PandemoniumBingo;component/Fonts/#Montserrat ExtraBold" FontSize="22"/>
+                <TextBlock x:Name="AchievementDescription12" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Naciśnij 6 a potem 9 w Bingo" VerticalAlignment="Top" Margin="{Binding Margin, ElementName=AchievementDescription}" Height="40" Width="{Binding Width, ElementName=AchievementDescription}" FontSize="14" Visibility="Hidden" Foreground="{Binding Foreground, ElementName=AchievementDescription}"/>
+                <Button Content="Spoiler" HorizontalAlignment="Left" Margin="{Binding Margin, ElementName=AchievementButton}" VerticalAlignment="Top" Width="{Binding Width, ElementName=AchievementButton}" Height="{Binding Height, ElementName=AchievementButton}" Template="{DynamicResource ButtonTemplate}" Click="AchievementButton_Click"/>
+            </Grid>
+            <Grid Height="{Binding Height, ElementName=Grid}" Width="{Binding Width, ElementName=Grid}">
+                <Label x:Name="AchievementTitle13" Content="Hope you have a nice day ;-)" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="40" Width="740" FontFamily="/PandemoniumBingo;component/Fonts/#Montserrat ExtraBold" FontSize="22"/>
+                <TextBlock x:Name="AchievementDescription13" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Naciśnij &quot;Copyright © 2021 Skeletonek&quot; w menu głównym aplikacji" VerticalAlignment="Top" Margin="{Binding Margin, ElementName=AchievementDescription}" Height="40" Width="{Binding Width, ElementName=AchievementDescription}" FontSize="14" Visibility="Hidden" Foreground="{Binding Foreground, ElementName=AchievementDescription}"/>
+                <Button Content="Spoiler" HorizontalAlignment="Left" Margin="{Binding Margin, ElementName=AchievementButton}" VerticalAlignment="Top" Width="{Binding Width, ElementName=AchievementButton}" Height="{Binding Height, ElementName=AchievementButton}" Template="{DynamicResource ButtonTemplate}" Click="AchievementButton_Click"/>
+            </Grid>
+            <Grid Height="{Binding Height, ElementName=Grid}" Width="{Binding Width, ElementName=Grid}">
+                <Label x:Name="AchievementTitle14" Content="Hope you don't have a nice day >:-(" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="40" Width="740" FontFamily="/PandemoniumBingo;component/Fonts/#Montserrat ExtraBold" FontSize="22"/>
+                <TextBlock x:Name="AchievementDescription14" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Naciskaj Ctrl+ aż zdobędziesz więcej niż 12 bingo" VerticalAlignment="Top" Margin="{Binding Margin, ElementName=AchievementDescription}" Height="40" Width="{Binding Width, ElementName=AchievementDescription}" FontSize="14" Visibility="Hidden" Foreground="{Binding Foreground, ElementName=AchievementDescription}"/>
+                <Button Content="Spoiler" HorizontalAlignment="Left" Margin="{Binding Margin, ElementName=AchievementButton}" VerticalAlignment="Top" Width="{Binding Width, ElementName=AchievementButton}" Height="{Binding Height, ElementName=AchievementButton}" Template="{DynamicResource ButtonTemplate}" Click="AchievementButton_Click"/>
+            </Grid>
+            <Grid Height="{Binding Height, ElementName=Grid}" Width="{Binding Width, ElementName=Grid}">
+                <Label x:Name="AchievementTitle15" Content="SuperReset" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="40" Width="740" FontFamily="/PandemoniumBingo;component/Fonts/#Montserrat ExtraBold" FontSize="22"/>
+                <TextBlock x:Name="AchievementDescription15" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Przytrzymaj Shift podczas resetowania bingo" VerticalAlignment="Top" Margin="{Binding Margin, ElementName=AchievementDescription}" Height="40" Width="{Binding Width, ElementName=AchievementDescription}" FontSize="14" Visibility="Hidden" Foreground="{Binding Foreground, ElementName=AchievementDescription}"/>
+                <Button Content="Spoiler" HorizontalAlignment="Left" Margin="{Binding Margin, ElementName=AchievementButton}" VerticalAlignment="Top" Width="{Binding Width, ElementName=AchievementButton}" Height="{Binding Height, ElementName=AchievementButton}" Template="{DynamicResource ButtonTemplate}" Click="AchievementButton_Click"/>
+            </Grid>
+            <Grid Height="{Binding Height, ElementName=Grid}" Width="{Binding Width, ElementName=Grid}">
+                <Label x:Name="AchievementTitle16" Content="Sznapsik" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="40" Width="740" FontFamily="/PandemoniumBingo;component/Fonts/#Montserrat ExtraBold" FontSize="22"/>
+                <TextBlock x:Name="AchievementDescription16" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Narysuj szachowice z bingo i wciśnij Shift + L" VerticalAlignment="Top" Margin="{Binding Margin, ElementName=AchievementDescription}" Height="40" Width="{Binding Width, ElementName=AchievementDescription}" FontSize="14" Visibility="Hidden" Foreground="{Binding Foreground, ElementName=AchievementDescription}"/>
+                <Button Content="Spoiler" HorizontalAlignment="Left" Margin="{Binding Margin, ElementName=AchievementButton}" VerticalAlignment="Top" Width="{Binding Width, ElementName=AchievementButton}" Height="{Binding Height, ElementName=AchievementButton}" Template="{DynamicResource ButtonTemplate}" Click="AchievementButton_Click"/>
+            </Grid>
+            <Grid Height="{Binding Height, ElementName=Grid}" Width="{Binding Width, ElementName=Grid}">
+                <Label x:Name="AchievementTitle17" Content="言語を日本語に変更する" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="40" Width="740" FontFamily="/PandemoniumBingo;component/Fonts/#Montserrat ExtraBold" FontSize="22"/>
+                <TextBlock x:Name="AchievementDescription17" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Zmień język systemu operacyjnego na japoński i uruchom ponownie aplikację" VerticalAlignment="Top" Margin="{Binding Margin, ElementName=AchievementDescription}" Height="40" Width="{Binding Width, ElementName=AchievementDescription}" FontSize="14" Visibility="Hidden" Foreground="{Binding Foreground, ElementName=AchievementDescription}"/>
+                <Button Content="Spoiler" HorizontalAlignment="Left" Margin="{Binding Margin, ElementName=AchievementButton}" VerticalAlignment="Top" Width="{Binding Width, ElementName=AchievementButton}" Height="{Binding Height, ElementName=AchievementButton}" Template="{DynamicResource ButtonTemplate}" Click="AchievementButton_Click"/>
+            </Grid>
+            <Grid Height="{Binding Height, ElementName=Grid}" Width="{Binding Width, ElementName=Grid}">
+                <Label x:Name="AchievementTitle18" Content="Geniusz" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="40" Width="740" FontFamily="/PandemoniumBingo;component/Fonts/#Montserrat ExtraBold" FontSize="22"/>
+                <TextBlock x:Name="AchievementDescription18" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Narysuj F z bingo i wciśnij Shift + L" VerticalAlignment="Top" Margin="{Binding Margin, ElementName=AchievementDescription}" Height="40" Width="{Binding Width, ElementName=AchievementDescription}" FontSize="14" Visibility="Hidden" Foreground="{Binding Foreground, ElementName=AchievementDescription}"/>
+                <Button Content="Spoiler" HorizontalAlignment="Left" Margin="{Binding Margin, ElementName=AchievementButton}" VerticalAlignment="Top" Width="{Binding Width, ElementName=AchievementButton}" Height="{Binding Height, ElementName=AchievementButton}" Template="{DynamicResource ButtonTemplate}" Click="AchievementButton_Click"/>
+            </Grid>
+        </ListBox>
+    </Grid>
+</Window>

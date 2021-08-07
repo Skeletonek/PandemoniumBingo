@@ -1,0 +1,51 @@
+﻿<Window x:Class="PandemoniumBingo.MainWindow" Style="{DynamicResource ResourceKey=WindowDefaultStyle}"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PandemoniumBingo"
+        mc:Ignorable="d"
+        Title="Pandemonium Bingo" Height="300" Width="500" MinWidth="300" MinHeight="200" SizeToContent="WidthAndHeight" ResizeMode="CanMinimize" HorizontalAlignment="Left" Icon="Icon/logo.ico" Closing="Window_Closing">
+    <Window.Resources>
+        <ControlTemplate x:Key="ButtonBaseControlTemplate1" TargetType="{x:Type ButtonBase}">
+            <Border x:Name="border" BorderThickness="0" SnapsToDevicePixels="True">
+                <ContentPresenter x:Name="contentPresenter" ContentTemplate="{TemplateBinding ContentTemplate}" ContentStringFormat="{TemplateBinding ContentStringFormat}" Focusable="False" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" Content=""/>
+            </Border>
+            <ControlTemplate.Triggers>
+                <Trigger Property="Button.IsDefaulted" Value="True">
+                    <Setter Property="BorderBrush" TargetName="border" Value="#00000000"/>
+                </Trigger>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" TargetName="border" Value="#00000000"/>
+                    <Setter Property="BorderBrush" TargetName="border" Value="#00000000"/>
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Background" TargetName="border" Value="#00000000"/>
+                    <Setter Property="BorderBrush" TargetName="border" Value="#00000000"/>
+                </Trigger>
+                <Trigger Property="ToggleButton.IsChecked" Value="True">
+                    <Setter Property="Background" TargetName="border" Value="#00000000"/>
+                    <Setter Property="BorderBrush" TargetName="border" Value="#00000000"/>
+                </Trigger>
+                <Trigger Property="IsEnabled" Value="False">
+                    <Setter Property="Background" TargetName="border" Value="#00000000"/>
+                    <Setter Property="BorderBrush" TargetName="border" Value="#00000000"/>
+                    <Setter Property="Foreground" Value="#00000000"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+    </Window.Resources>
+    <Grid Width="492" Height="271">
+        <Label Content="Bingo" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="32" FontFamily="/PandemoniumBingo;component/Fonts/#Montserrat ExtraBold" Width="113"/>
+        <Button Content="CS:GO" HorizontalAlignment="Center" Margin="10,74,369,0" VerticalAlignment="Top" Width="113" Click="Button_Click_1" Template="{DynamicResource ButtonTemplate}"/>
+        <Button Content="Rocket League" HorizontalAlignment="Center" Margin="10,99,369,0" VerticalAlignment="Top" Width="113" Click="Button_Click" Template="{DynamicResource ButtonTemplate}"/>
+        <Label x:Name="Version_Label" Content="Wersja: 1.3.2" HorizontalAlignment="Left" Margin="5,0,0,24" VerticalAlignment="Bottom" FontSize="11"/>
+        <Label x:Name="Version_Label_Copy" Content="Copyright © 2021 Skeletonek" HorizontalAlignment="Left" Margin="5,0,0,10" VerticalAlignment="Bottom" FontSize="9"/>
+        <ScrollViewer HorizontalAlignment="Left" Height="251" Margin="213,10,0,0" VerticalAlignment="Top" Width="269" Template="{DynamicResource ScrollViewerControlTemplate1}">
+            <TextBlock TextWrapping="Wrap" Foreground="White"><Run FontWeight="Bold" Text="1.3.2"/><LineBreak/><Run Text=" - Dodano nowe hasło do CS:GO Bingo"/><LineBreak/><Run Text=" "/><Run Text="- Nowe sekrety"/><LineBreak/><Run Text=" - Optymalizacja kodu"/><LineBreak/><Run Text=" - Naprawiono błąd związany z podwójnym uruchamianiem kodu dla sekretów"/><LineBreak/><Run Text=" - Zmieniono nazwę osiągnięcia"/><LineBreak/><Run FontWeight="Bold"/><LineBreak/><Run FontWeight="Bold" Text="1.3.1"/><LineBreak/><Run Text="- Ujednolicono nazewnictwo aplikacji"/><LineBreak/><Run Text="- Zoptymalizowano system dodawania nowych haseł do Bingo"/><LineBreak/><Run Text="- Ogólna optymalizacja kodu"/><LineBreak/><Run Text="- Dostosowano Scrollbar'y do DarkUI"/><LineBreak/><Run Text="- Dodano jeszcze więcej smaczków"/><LineBreak/><Run Text="- Dodano panel z listą wszystkich osiągnięć"/><LineBreak/><Run Text="- Poprawa błędów"/><LineBreak/><Run/><LineBreak/><Run FontWeight="Bold" Text="1."/><Run FontWeight="Bold" Text="3.0"/><LineBreak/><Run Text="- Zmodyfikowano mechanizm aktualizacji, aby sprawdzał nową aktualizację przed uruchomieniem programu"/><LineBreak/><Run Text="- Zmodyfikowano wygląd menu głównego aplikacji"/><LineBreak/><Run Text="- Zaktualizowano ikonę"/><LineBreak/><Run Text="- Dodano ten piękny changelog"/><LineBreak/><Run Text="- Poprawiono hasła w CS:GO Bingo"/><LineBreak/><Run Text="- Dodano nowe hasła do CS:GO Bingo"/><LineBreak/><Run Text="- Dodano "/><Run Text="tylko "/><Run Text="parę fajnych smaczków"/><LineBreak/><Run FontWeight="Bold"/><LineBreak/><Run FontWeight="Bold" Text="1.2.1"/><LineBreak/><Run Text="- Dodano więcej haseł do CS:GO Bingo"/><LineBreak/><Run Text="- Dodano więcej haseł do Rocket League Bingo"/><LineBreak/><LineBreak/><Run FontWeight="Bold" Text="1.2.0"/><LineBreak/><Run Text=" - Dodano instalator do aplikacji"/><LineBreak/><Run Text=" - Dodano mechanizm aktualizacji"/><LineBreak/><Run Text=" - Dodano możliwość wykluczenia osób które nie biorą udziału w Bingo"/><LineBreak/><Run Text=" - Dodano licznik osiągniętych bingo"/><LineBreak/><Run Text=" - Dodano efekt dźwiękowy przy osiągnięciu nowego bingo"/><LineBreak/><Run Text=" - Lekka zmiana wyglądu aplikacji"/><LineBreak/><Run Text=" - Dodano więcej haseł do CS:GO Bingo"/><LineBreak/><LineBreak/><Run FontWeight="Bold" Text="1.1.1"/><LineBreak/><Run Text=" - Dodano czcionkę Montserrat jako zasób pliku .exe"/><LineBreak/><Run Text=" - Drobne poprawki wizualne"/><LineBreak/><LineBreak/><Run FontWeight="Bold" Text="1.1.0"/><LineBreak/><Run Text=" - Wprowadzono algorytm pseudolosujący hasła"/><LineBreak/><Run Text=" - Wyrównano układ przycisków"/><LineBreak/><Run Text=" - Wprowadzono nowy sposób wyglądu binga"/><LineBreak/><Run Text=" - Zmieniono wygląd aplikacji na DarkUI"/><LineBreak/><Run Text=" - Dodano więcej haseł do CS:GO Bingo"/><LineBreak/><Run Text=" - Dodano więcej haseł do Rocket League Bingo"/><LineBreak/><Run Text=" - Zmiana platformy na .NET Framework 4.5.2 (poprzednio .NET 5.0)"/><LineBreak/><LineBreak/><Run FontWeight="Bold" Text="1.0.3"/><LineBreak/><Run Text="-Poprawiono błąd z crash'em aplikacji w CS:GO Bingo"/><LineBreak/><LineBreak/><Run FontWeight="Bold" Text="1.0.2"/><LineBreak/><Run Text="-Zaktualizowano CS:GO Bingo"/><LineBreak/><LineBreak/><Run FontWeight="Bold" Text="1.0.1"/><LineBreak/><Run Text="-Dodano możliwość odznaczania pól"/><LineBreak/><Run Text="-Poprawiono błąd z nieprawidłowym obliczaniem bingo"/><LineBreak/><Run Text="-Zaktualizowano Rocket League Bingo"/><LineBreak/><LineBreak/><Run FontWeight="Bold" Text="1.0.0"/><LineBreak/><Run Text="-Pierwsze wydanie"/></TextBlock>
+        </ScrollViewer>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="5,239,0,0" VerticalAlignment="Top" Width="127" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="Button_Click_2" Height="22" Template="{DynamicResource ButtonBaseControlTemplate1}"/>
+        <Button Content="Osiągnięcia" HorizontalAlignment="Left" Margin="10,197,0,0" VerticalAlignment="Top" Width="113" Template="{DynamicResource ButtonTemplate}" Click="Button_Click_3"/>
+        <Label Content="Pandemonium" HorizontalAlignment="Left" Margin="33,47,0,0" VerticalAlignment="Top" FontFamily="/PandemoniumBingo;component/Fonts/#Montserrat ExtraBold" Width="115" FontSize="10"/>
+    </Grid>
+</Window>

@@ -1,0 +1,83 @@
+﻿<Window x:Class="PandemoniumBingo._7SoS"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Closing="Window_Closing" Title="7SoS" Height="720" Width="1276" ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen" WindowState="Maximized" WindowStyle="None">
+    <Grid>
+        <Panel.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="0"/>
+                <GradientStop Color="#FFB93D3D" Offset="1"/>
+            </LinearGradientBrush>
+        </Panel.Background>
+        <Image x:Name="heroicon" HorizontalAlignment="Left" Height="128" Margin="36,0,0,184"
+           VerticalAlignment="Bottom" Width="129" Source="Images/plichu.jpg"/>
+        <Image x:Name="enemyicon" HorizontalAlignment="Right" Height="194" Margin="0,13,10,0"
+           VerticalAlignment="Top" Width="194" Source="Images/piwon.png" Grid.Column="2"/>
+        <ProgressBar x:Name="enemyhealth_bar" HorizontalAlignment="Right" Height="28" Margin="0,249,66,0"
+                 VerticalAlignment="Top" Width="150" Value="100" Foreground="#FF00FF2F" Grid.Column="2"
+                 Background="Red"/>
+        <ProgressBar x:Name="herohealth_bar" HorizontalAlignment="Left" Height="32" Margin="36,0,0,103"
+                 VerticalAlignment="Bottom" Width="226" Value="100" Foreground="#FF00FF2F" Background="Red"/>
+        <Button Click="Button_Click" x:Name="meleeattack_button" Content="Atak" HorizontalAlignment="Right"
+            Margin="0,0,594,111" VerticalAlignment="Bottom" Width="160" Height="46"/>
+        <Button Click="Powerattack_button_Click" x:Name="powerattack_button" Content="Atak krytyczny"
+            HorizontalAlignment="Right" Margin="0,0,594,43" VerticalAlignment="Bottom" Width="160" Height="63"
+            IsEnabled="false"/>
+        <ProgressBar x:Name="heroenergy_bar" HorizontalAlignment="Left" Height="32" Margin="37,0,0,64"
+                 VerticalAlignment="Bottom" Width="226" Value="60" Foreground="#FF00F3FF"/>
+        <ProgressBar x:Name="heropowerattack_bar" HorizontalAlignment="Left" Height="32" Margin="37,0,0,26"
+                 VerticalAlignment="Bottom" Width="226" Value="32" Foreground="#FFFF8000"/>
+        <Button Click="Run_button_Click" x:Name="run_button" Content="Ucieczka" HorizontalAlignment="Right"
+            Margin="0,0,594,11" VerticalAlignment="Bottom" Width="160" Height="27"/>
+        <Label x:Name="enemyhealth" Content="100%" HorizontalAlignment="Right" Margin="0,246,10,0"
+           VerticalAlignment="Top" Foreground="White" FontSize="16" FontWeight="Bold" Grid.Column="2"/>
+        <Label x:Name="herohealth" Content="100" HorizontalAlignment="Left" Margin="267,0,0,103"
+           VerticalAlignment="Bottom" Foreground="White" RenderTransformOrigin="2.983,0.673" Height="34"
+           Width="38" FontSize="14" FontWeight="Bold"/>
+        <Label x:Name="herohealth_upperlimit" Content="/ 100" HorizontalAlignment="Left" Margin="305,0,0,103"
+           VerticalAlignment="Bottom" Foreground="White" Height="34" Width="49" FontSize="14"
+           FontWeight="Bold"/>
+        <Label x:Name="heroenergy" Content="60" HorizontalAlignment="Left" Margin="268,0,0,64"
+           VerticalAlignment="Bottom" Foreground="White" RenderTransformOrigin="2.983,0.673" Height="34"
+           Width="38" FontSize="14" FontWeight="Bold"/>
+        <Label x:Name="heroenergy_upperlimit" Content="/ 100" HorizontalAlignment="Left" Margin="306,0,0,64"
+           VerticalAlignment="Bottom" Foreground="White" Height="34" Width="49" FontSize="14"
+           FontWeight="Bold"/>
+        <Label x:Name="heropowerattack" Content="32%" HorizontalAlignment="Left" Margin="268,0,0,26"
+           VerticalAlignment="Bottom" Foreground="White" Height="34" Width="51" FontSize="14"
+           FontWeight="Bold"/>
+        <TextBox x:Name="battlestatus_textbox" HorizontalAlignment="Left" Height="346.5" Margin="36,36,0,0"
+             TextWrapping="Wrap" VerticalAlignment="Top" Width="767" Foreground="White"
+             UseLayoutRounding="false" IsReadOnly="true" Grid.ColumnSpan="3" Background="{x:Null}"/>
+        <GroupBox Header="Ataki specjalne" HorizontalAlignment="Right" Height="278" Margin="0,0,10,10"
+              VerticalAlignment="Bottom" Width="573" Foreground="White" Grid.Column="2">
+            <Grid HorizontalAlignment="Left" Height="268" Margin="0,0,-2,-12" VerticalAlignment="Top" Width="467">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button Click="SpecialAttack2_Click" MouseEnter="SpecialAttack2_MouseEnter"
+                MouseLeave="SpecialAttack1_MouseLeave" x:Name="SpecialAttack2" Content="" Margin="206,10,111,0"
+                VerticalAlignment="Top" Width="150" HorizontalAlignment="Center" IsEnabled="false"/>
+                <Button Click="SpecialAttack1_Click" MouseEnter="SpecialAttack1_MouseEnter"
+                MouseLeave="SpecialAttack1_MouseLeave" x:Name="SpecialAttack1" Content=""
+                HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="150" IsEnabled="false" Height="20"/>
+                <TextBlock x:Name="SpecialAttackDescription" HorizontalAlignment="Left" Margin="10,0,-87,10"
+                   TextWrapping="Wrap" VerticalAlignment="Bottom" Height="223" Width="544" Background="#33000000"/>
+                <Button MouseEnter="SpecialAttack3_MouseEnter" MouseLeave="SpecialAttack1_MouseLeave"
+                x:Name="SpecialAttack3" Content="" HorizontalAlignment="Left" Margin="404,10,-87,0"
+                VerticalAlignment="Top" Width="150" Background="#FF7C7C7C" Foreground="Black"/>
+            </Grid>
+        </GroupBox>
+        <Label x:Name="EnemyName" Content="&lt;EnemyName&gt;" HorizontalAlignment="Right" Margin="0,212,10,0"
+           VerticalAlignment="Top" Foreground="White" Grid.Column="2" FontSize="14" Width="392"
+           FlowDirection="RightToLeft"/>
+        <Label x:Name="HeroName" Content="&lt;HeroName&gt;" HorizontalAlignment="Left" Margin="37,0,0,142"
+           VerticalAlignment="Bottom" Foreground="White" Width="480" Height="28" FontSize="14"/>
+    </Grid>
+</Window>
