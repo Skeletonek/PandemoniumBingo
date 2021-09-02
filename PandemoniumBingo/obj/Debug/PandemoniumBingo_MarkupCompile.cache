@@ -1,19 +1,19 @@
 ﻿PandemoniumBingo
 
 
-exe
+winexe
 C#
 .cs
-C:\Users\skele\source\repos\PandemoniumBingo\PandemoniumBingo\obj\Debug\
+C:\Users\skele\Documents\GitHub\PandemoniumBingo\PandemoniumBingo\obj\Debug\
 PandemoniumBingo
 none
 false
 DEBUG;TRACE
-C:\Users\skele\source\repos\PandemoniumBingo\PandemoniumBingo\App.xaml
+C:\Users\skele\Documents\GitHub\PandemoniumBingo\PandemoniumBingo\App.xaml
 6-581497860
 5-2141521112
 15-1732089770
-16-1268236279
+161027543676
 7SoS_EasterEgg\7SoS.xaml;Achievements.xaml;CSGO.xaml;EasterEgg.xaml;MainWindow.xaml;RocketLeague.xaml;
 
 False

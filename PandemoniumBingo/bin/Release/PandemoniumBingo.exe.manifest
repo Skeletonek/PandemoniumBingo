@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PandemoniumBingo.exe" size="1383424">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PandemoniumBingo.exe" size="1383936">
       <assemblyIdentity name="PandemoniumBingo" version="1.3.2.10" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>tBfRIVMQmV+itU4yRsP8eB7W7bzDrkfAYU6UZ+BC5g0=</dsig:DigestValue>
+        <dsig:DigestValue>+wSF6RmWPtMT/t/jcL3OO6okCaeS2AomnD8XR846kc8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

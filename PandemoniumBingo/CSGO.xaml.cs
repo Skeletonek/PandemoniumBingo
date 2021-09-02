@@ -20,7 +20,7 @@ namespace PandemoniumBingo
     public partial class CSGO : Window
     {
         BingoLogic CSBingo = new BingoLogic(5, 0);
-        bool[] PlayersChecked = new bool[5];
+        bool[] PlayersChecked = new bool[6];
         int oldBingo = 0;
         MediaPlayer player = new MediaPlayer();
         int easterEggIndex = 0;

@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="PandemoniumBingo.exe" version="1.3.1.9" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="PandemoniumBingo.exe" version="1.3.2.10" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <description asmv2:iconFile="Icon\logo.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="PandemoniumBingo" version="1.3.1.9" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="PandemoniumBingo" version="1.3.2.10" language="neutral" processorArchitecture="msil" />
     <commandLine file="PandemoniumBingo.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -44,13 +44,13 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PandemoniumBingo.exe" size="1410048">
-      <assemblyIdentity name="PandemoniumBingo" version="1.3.1.9" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="PandemoniumBingo" version="1.3.2.10" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>wcRhMTpf0hMcHzjwxk0pi757eyaTS1VVfkS+MkzakK4=</dsig:DigestValue>
+        <dsig:DigestValue>SVfrIXKkoXtq0bh+Oi4/ozvCRFO3xDmscXqAsmPkyn4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -99,13 +99,13 @@
       <dsig:DigestValue>3TTGI76V6D5Ol93QPo9XNXj8VV9I5Lzo1sMgQP6+QSg=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="PandemoniumBingo.exe.config" size="928">
+  <file name="PandemoniumBingo.exe.config" size="924">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>7w8guk2mwd4kCVuZtccOKksP2PbXZ/PjcvGe3dbrzD8=</dsig:DigestValue>
+      <dsig:DigestValue>EqP2tVCHOQj9T4Olax13jIKAZMOuV7+x7I1wzM0tBdA=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Videos\duck.mp4" size="1651306">

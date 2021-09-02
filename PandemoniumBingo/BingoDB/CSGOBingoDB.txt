@@ -43,16 +43,18 @@
 0\Jacek robi &cardio& przez pół mapy
 0\Jackowi &zacina& się &myszka&
 0\&Jacek:& Dobra, ja wybiegam i &dostaję w łeb&...
-1\Plichu nie słyszy &info&
-1\Plichu już nie musi grać. &Robimy& wszystko &za niego&.
-1\Plichu się &odpala& (Ace, etc.)
-1\&Plichu& dostaje &Rage&'a
-2\&Maciek:& Dobra! Ej panowie! &Taktyka!&
-2\&Maciek& dostaje &Rage&'a
-3\Kołocz &SCOUT& VAC
-3\Kołocz kurwa &eco jest&
-3\&Kołocz& się &jara& jak wiedźma na stosie
-4\Łukaszczyk dalej &uczy& się &biegać&
-4\&Łukaszczyk:& Będziesz grał tą &AWPą&?
-4\&Łukaszczyk odpierdala& Łukaszczy\n-kowe rzeczy
-4\&ŁUKASZCZYK& TY KURWA CWELU
+1\&DZIADU!&
+1\&JADYMY DURCH!&
+2\Plichu nie słyszy &info&
+2\Plichu już nie musi grać. &Robimy& wszystko &za niego&.
+2\Plichu się &odpala& (Ace, etc.)
+2\&Plichu& dostaje &Rage&'a
+3\&Maciek:& Dobra! Ej panowie! &Taktyka!&
+3\&Maciek& dostaje &Rage&'a
+4\Kołocz &SCOUT& VAC
+4\Kołocz kurwa &eco jest&
+4\&Kołocz& się &jara& jak wiedźma na stosie
+5\Łukaszczyk dalej &uczy& się &biegać&
+5\&Łukaszczyk:& Będziesz grał tą &AWPą&?
+5\&Łukaszczyk odpierdala& Łukaszczy\n-kowe rzeczy
+5\&ŁUKASZCZYK& TY KURWA CWELU

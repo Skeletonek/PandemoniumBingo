@@ -87,6 +87,7 @@
         <Label x:Name="BingoLabel" Content="BINGO: 0" HorizontalAlignment="Left" Margin="627,106,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Foreground="Lime" FontFamily="/PandemoniumBingo;component/Fonts/#Montserrat ExtraBold" Width="125" HorizontalContentAlignment="Center"/>
         <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="120" Margin="634,260,0,0" VerticalAlignment="Top" Width="118" Template="{DynamicResource ListBoxTemplate}">
             <CheckBox x:Name="Person_CheckBox1" Content="Jacek" Template="{DynamicResource CheckBoxTemplate}" IsChecked="True" Click="Person_CheckBox1_Checked"/>
+            <CheckBox x:Name="Person_CheckBox6" Content="Karol" Template="{DynamicResource CheckBoxTemplate}" IsChecked="True" Click="Person_CheckBox1_Checked"/>
             <CheckBox x:Name="Person_CheckBox2" Template="{DynamicResource CheckBoxTemplate}" IsChecked="True" Content="Łukasz" Click="Person_CheckBox1_Checked"/>
             <CheckBox x:Name="Person_CheckBox5" Content="Maciek" Template="{DynamicResource CheckBoxTemplate}" IsChecked="True" Click="Person_CheckBox1_Checked"/>
             <CheckBox x:Name="Person_CheckBox3" Template="{DynamicResource CheckBoxTemplate}" IsChecked="True" Content="Michał K" Click="Person_CheckBox1_Checked"/>
