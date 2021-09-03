@@ -39,6 +39,7 @@
 -1\&James Bond&\ni\ndnoB semaJ
 -1\&Nie rush'ujcie& ich kurwa
 -1\Let's go to &B Bomb&
+-1\Jak on za chuja &nie grał jak *ranga*!&
 0\Jacek gra na &dzikim zachodzie&
 0\Jacek robi &cardio& przez pół mapy
 0\Jackowi &zacina& się &myszka&
