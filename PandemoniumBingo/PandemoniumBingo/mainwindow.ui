@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>619</width>
+    <height>358</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>80</y>
+      <width>161</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Montserrat</family>
+      <pointsize>13</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>Pandemonium</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>270</y>
+      <width>221</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Wersja: QTPrototype-24042022</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>161</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Montserrat</family>
+      <pointsize>36</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Bingo</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QScrollArea" name="scrollArea">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>20</y>
+      <width>311</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>309</width>
+       <height>289</height>
+      </rect>
+     </property>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>301</width>
+        <height>900</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string>1.3.3
+ - Podwyższono wymagania sprzętowe
+ - Zmiana platformy docelowej na .NET Framework 4.8
+ - Dodano nowego gracza do CS:GO Bingo
+ - Dodano nowe hasła do CS:GO Bingo
+ - Nie, w tej wersji nie ma nowych osiągnięć
+
+1.3.2
+ - Dodano nowe hasło do CS:GO Bingo
+ - Nowe sekrety
+ - Optymalizacja kodu
+ - Naprawiono błąd związany z podwójnym uruchamianiem kodu dla sekretów
+ - Zmieniono nazwę osiągnięcia
+
+1.3.1
+- Ujednolicono nazewnictwo aplikacji
+- Zoptymalizowano system dodawania nowych haseł do Bingo
+- Ogólna optymalizacja kodu
+- Dostosowano Scrollbar'y do DarkUI
+- Dodano jeszcze więcej smaczków
+- Dodano panel z listą wszystkich osiągnięć
+- Poprawa błędów
+
+1.3.0
+- Zmodyfikowano mechanizm aktualizacji, aby sprawdzał nową aktualizację przed uruchomieniem programu
+- Zmodyfikowano wygląd menu głównego aplikacji
+- Zaktualizowano ikonę
+- Dodano ten piękny changelog
+- Poprawiono hasła w CS:GO Bingo
+- Dodano nowe hasła do CS:GO Bingo
+- Dodano tylko parę fajnych smaczków
+
+1.2.1
+- Dodano więcej haseł do CS:GO Bingo
+- Dodano więcej haseł do Rocket League Bingo
+
+1.2.0
+ - Dodano instalator do aplikacji
+ - Dodano mechanizm aktualizacji
+ - Dodano możliwość wykluczenia osób które nie biorą udziału w Bingo
+ - Dodano licznik osiągniętych bingo
+ - Dodano efekt dźwiękowy przy osiągnięciu nowego bingo
+ - Lekka zmiana wyglądu aplikacji
+ - Dodano więcej haseł do CS:GO Bingo
+
+1.1.1
+ - Dodano czcionkę Montserrat jako zasób pliku .exe
+ - Drobne poprawki wizualne
+
+1.1.0
+ - Wprowadzono algorytm pseudolosujący hasła
+ - Wyrównano układ przycisków
+ - Wprowadzono nowy sposób wyglądu binga
+ - Zmieniono wygląd aplikacji na DarkUI
+ - Dodano więcej haseł do CS:GO Bingo
+ - Dodano więcej haseł do Rocket League Bingo
+ - Zmiana platformy na .NET Framework 4.5.2 (poprzednio .NET 5.0)
+
+1.0.3
+-Poprawiono błąd z crash'em aplikacji w CS:GO Bingo
+
+1.0.2
+-Zaktualizowano CS:GO Bingo
+
+1.0.1
+-Dodano możliwość odznaczania pól
+-Poprawiono błąd z nieprawidłowym obliczaniem bingo
+-Zaktualizowano Rocket League Bingo
+
+1.0.0
+-Pierwsze wydanie</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QListView" name="listView">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>110</y>
+      <width>241</width>
+      <height>141</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>290</y>
+      <width>221</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>7</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Copyright © 2021-2022 Skeletonek</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>619</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
