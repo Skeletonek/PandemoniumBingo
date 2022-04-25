@@ -14,6 +14,7 @@
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QListView>
 #include <QtWidgets/QMainWindow>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QTextBrowser>
 #include <QtWidgets/QWidget>
 
@@ -29,12 +30,13 @@ public:
     QListView *listView;
     QLabel *label_5;
     QTextBrowser *textBrowser;
+    QPushButton *pushButton;
 
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(621, 321);
+        MainWindow->resize(581, 321);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         label = new QLabel(centralwidget);
@@ -68,7 +70,7 @@ public:
         label_3->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
         listView = new QListView(centralwidget);
         listView->setObjectName(QString::fromUtf8("listView"));
-        listView->setGeometry(QRect(10, 100, 251, 161));
+        listView->setGeometry(QRect(10, 90, 211, 181));
         label_5 = new QLabel(centralwidget);
         label_5->setObjectName(QString::fromUtf8("label_5"));
         label_5->setGeometry(QRect(10, 290, 221, 16));
@@ -78,7 +80,10 @@ public:
         label_5->setAlignment(Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft);
         textBrowser = new QTextBrowser(centralwidget);
         textBrowser->setObjectName(QString::fromUtf8("textBrowser"));
-        textBrowser->setGeometry(QRect(270, 10, 341, 301));
+        textBrowser->setGeometry(QRect(230, 10, 341, 301));
+        pushButton = new QPushButton(centralwidget);
+        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        pushButton->setGeometry(QRect(20, 110, 80, 26));
         MainWindow->setCentralWidget(centralwidget);
 
         retranslateUi(MainWindow);
@@ -90,7 +95,7 @@ public:
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "PandemoniumBingo", nullptr));
         label->setText(QCoreApplication::translate("MainWindow", "Pandemonium", nullptr));
-        label_2->setText(QCoreApplication::translate("MainWindow", "Wersja: QTPrototype-24042022", nullptr));
+        label_2->setText(QCoreApplication::translate("MainWindow", "Wersja: QTPrototype-25042022", nullptr));
         label_3->setText(QCoreApplication::translate("MainWindow", "Bingo", nullptr));
         label_5->setText(QCoreApplication::translate("MainWindow", "Copyright \302\251 2021-2022 Skeletonek", nullptr));
         textBrowser->setHtml(QCoreApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
@@ -180,6 +185,7 @@ public:
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">1.0.0</p>\n"
 "<p style=\" margin-top:0px; margin-b"
                         "ottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">-Pierwsze wydanie</p></body></html>", nullptr));
+        pushButton->setText(QCoreApplication::translate("MainWindow", "OpenBingo", nullptr));
     } // retranslateUi
 
 };
