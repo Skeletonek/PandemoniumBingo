@@ -10,11 +10,13 @@ CONFIG += c++17
 
 SOURCES += \
     bingo.cpp \
+    bingofileparser.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
     bingo.h \
+    bingofileparser.h \
     mainwindow.h
 
 FORMS += \
