@@ -3,6 +3,8 @@
 
 #include <QDialog>
 
+using namespace std;
+
 namespace Ui {
 class Bingo;
 }
@@ -30,7 +32,6 @@ private:
     int bingoData[5][5];
 
     int checkBingo();
-    int giveMeABingo();
 };
 
 #endif // BINGO_H

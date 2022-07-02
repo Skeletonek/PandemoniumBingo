@@ -83,15 +83,3 @@ int Bingo::checkBingo(){
         }
         return bingoCheck;
     }
-
-int Bingo::giveMeABingo(){
-//        int random = rand()%2;
-
-//        Random rnd = new Random();
-//        string DrawnData = Data[rnd.Next(Data.Count)];
-//        Data.Remove(DrawnData);
-//        return DrawnData;
-
-    return 0;
-}
-
