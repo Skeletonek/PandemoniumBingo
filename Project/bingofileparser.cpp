@@ -1,17 +1,36 @@
+//Struktura pliku
+//Kategoria:Tutaj tekst karty &bingo&
+//
+//Ten format jest podobny do poprzedniej wersji z tym że wpisywana jest teraz
+// nazwa kategorii a nie ID kategorii.
+//& - ampersandy oznaczją wyróżnienie tekstu
+
 #include "bingofileparser.h"
 
 BingoFileParser::BingoFileParser(){
 
 }
 
-void BingoFileParser::readFile(){
- //Prawdopodobna struktura pliku
- //Kategoria:Tutaj tekst karty &bingo&
- //
- //Ten format jest podobny do poprzedniej wersji z tym że wpisywana jest teraz
- // nazwa kategorii a nie ID kategorii.
- // & - apostrofy oznaczją wyróżnienie tekstu
- // Do ustalenia czy będzie to zmiana koloru tak jak w porzedniej wersji czy coś innego
+map<string, string> BingoFileParser::getData(){
+    return data;
+}
+
+void BingoFileParser::readFile(string filename){
+ string line;
+ fstream file;
+
+ file.open(filename, ios::in | ios::out);
+ if(file.good()){
+    while( !file.eof() ){
+       getline(file, line);
+       string map_key_str = line.substr(0, line.find(":"));
+       string map_value_str = line.substr(line.find(":"), line.length());
+       data.insert({map_key_str, map_value_str});
+    }
+ }
+ else{
+     cout << "There was an error while opening a file";
+ }
 }
 
 void BingoFileParser::getAllFiles(){
@@ -26,9 +45,10 @@ void BingoFileParser::getAllFiles(){
     }
 }
 
-string BingoFileParser::giveMeABingoTileText(){
-    int random = rand()%2; //Change 2 to fileLineLength
-    string data_tmp = data[random];
-    data.erase(data.begin() + random);
-    return data_tmp;
-}
+//string BingoFileParser::giveMeABingoTileText(){
+//    int random = rand()%2; //Change 2 to fileLineLength
+//    string data_tmp = data.find();
+//    data.erase(data.begin() + random);
+//    return data_tmp;
+    return "null";
+//}

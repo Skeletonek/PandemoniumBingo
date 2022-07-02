@@ -4,8 +4,8 @@
 #include <string>
 #include <iostream>
 #include <filesystem>
-#include <vector>
 #include <map>
+#include <fstream>
 
 using namespace std;
 
@@ -13,13 +13,13 @@ class BingoFileParser
 {
 public:
     BingoFileParser();
-    void readFile();
+    void readFile(string filename);
     void getAllFiles();
-    string giveMeABingoTileText();
+    map<string, string> getData();
+    //string giveMeABingoTileText();
 
 private:
-    map<char, string> dataa;
-    vector<string> data;
+    map<string, string> data;
 };
 
 #endif // BINGOFILEPARSER_H
