@@ -7,12 +7,20 @@ BingoFileParser bingoFileParser;
 Bingo::Bingo(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Bingo){
-
+    createBingo();
     ui->setupUi(this);
 }
 
 Bingo::~Bingo(){
     delete ui;
+}
+
+void Bingo::createBingo(){
+    for(int i = 0; i < 5; i++){
+        for(int j = 0; j < 5; j++){
+            bingoText[i][j] = bingoFileParser.giveMeABingoTileText();
+        }
+    }
 }
 
 void Bingo::on_button_click(){

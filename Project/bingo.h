@@ -29,9 +29,10 @@ private:
     Ui::Bingo *ui;
 
     bool bingo[5][5];
-    int bingoData[5][5];
+    string bingoText[5][5];
 
     int checkBingo();
+    void createBingo();
 };
 
 #endif // BINGO_H
