@@ -23,9 +23,11 @@ void BingoFileParser::readFile(string filename){
  if(file.good()){
     while( !file.eof() ){
        getline(file, line);
-       string map_key_str = line.substr(0, line.find(":"));
-       string map_value_str = line.substr(line.find(":"), line.length());
+       if(line != ""){
+       string map_key_str = line.substr(0, line.find("\\"));
+       string map_value_str = line.substr(line.find("\\"), (line.length()-map_key_str.length()));
        data.insert({map_key_str, map_value_str});
+       }
     }
  }
  else{

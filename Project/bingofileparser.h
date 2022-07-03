@@ -14,9 +14,10 @@ class BingoFileParser
 {
 public:
     BingoFileParser();
+    map<string, string> getData();
+
     void readFile(string filename);
     vector<string> getAllFiles();
-    map<string, string> getData();
     //string giveMeABingoTileText();
 
 private:

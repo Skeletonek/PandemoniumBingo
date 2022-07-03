@@ -2,6 +2,7 @@
 #define BINGO_H
 
 #include <QDialog>
+#include <map>
 
 using namespace std;
 
@@ -26,9 +27,14 @@ private:
 
     bool bingo[5][5];
     string bingoText[5][5];
+    QPushButton *btnArr[25];
+    map<string, string> bingoTilesFull;
+    vector<string> bingoTiles;
 
     int checkBingo();
     void createBingo();
+    void fillInButtons();
+    void constructButtons();
 };
 
 #endif // BINGO_H

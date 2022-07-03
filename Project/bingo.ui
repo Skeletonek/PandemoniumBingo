@@ -35,9 +35,6 @@
         <verstretch>0</verstretch>
        </sizepolicy>
       </property>
-      <property name="text">
-       <string>PushButton</string>
-      </property>
       <property name="flat">
        <bool>false</bool>
       </property>
@@ -50,9 +47,6 @@
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
-      </property>
-      <property name="text">
-       <string>PushButton</string>
       </property>
       <property name="flat">
        <bool>false</bool>
@@ -67,9 +61,6 @@
         <verstretch>0</verstretch>
        </sizepolicy>
       </property>
-      <property name="text">
-       <string>PushButton</string>
-      </property>
       <property name="flat">
        <bool>false</bool>
       </property>
@@ -82,9 +73,6 @@
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
-      </property>
-      <property name="text">
-       <string>PushButton</string>
       </property>
       <property name="flat">
        <bool>false</bool>
@@ -99,9 +87,6 @@
         <verstretch>0</verstretch>
        </sizepolicy>
       </property>
-      <property name="text">
-       <string>PushButton</string>
-      </property>
       <property name="flat">
        <bool>false</bool>
       </property>
@@ -114,9 +99,6 @@
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
-      </property>
-      <property name="text">
-       <string>PushButton</string>
       </property>
       <property name="flat">
        <bool>false</bool>
@@ -131,9 +113,6 @@
         <verstretch>0</verstretch>
        </sizepolicy>
       </property>
-      <property name="text">
-       <string>PushButton</string>
-      </property>
       <property name="flat">
        <bool>false</bool>
       </property>
@@ -146,9 +125,6 @@
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
-      </property>
-      <property name="text">
-       <string>PushButton</string>
       </property>
       <property name="flat">
        <bool>false</bool>
@@ -163,9 +139,6 @@
         <verstretch>0</verstretch>
        </sizepolicy>
       </property>
-      <property name="text">
-       <string>PushButton</string>
-      </property>
       <property name="flat">
        <bool>false</bool>
       </property>
@@ -178,9 +151,6 @@
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
-      </property>
-      <property name="text">
-       <string>PushButton</string>
       </property>
       <property name="flat">
        <bool>false</bool>
@@ -195,9 +165,6 @@
         <verstretch>0</verstretch>
        </sizepolicy>
       </property>
-      <property name="text">
-       <string>PushButton</string>
-      </property>
       <property name="flat">
        <bool>false</bool>
       </property>
@@ -210,9 +177,6 @@
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
-      </property>
-      <property name="text">
-       <string>PushButton</string>
       </property>
       <property name="flat">
        <bool>false</bool>
@@ -227,9 +191,6 @@
         <verstretch>0</verstretch>
        </sizepolicy>
       </property>
-      <property name="text">
-       <string>PushButton</string>
-      </property>
       <property name="flat">
        <bool>false</bool>
       </property>
@@ -242,9 +203,6 @@
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
-      </property>
-      <property name="text">
-       <string>PushButton</string>
       </property>
       <property name="flat">
        <bool>false</bool>
@@ -259,9 +217,6 @@
         <verstretch>0</verstretch>
        </sizepolicy>
       </property>
-      <property name="text">
-       <string>PushButton</string>
-      </property>
       <property name="flat">
        <bool>false</bool>
       </property>
@@ -274,9 +229,6 @@
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
-      </property>
-      <property name="text">
-       <string>PushButton</string>
       </property>
       <property name="flat">
        <bool>false</bool>
@@ -291,9 +243,6 @@
         <verstretch>0</verstretch>
        </sizepolicy>
       </property>
-      <property name="text">
-       <string>PushButton</string>
-      </property>
       <property name="flat">
        <bool>false</bool>
       </property>
@@ -306,9 +255,6 @@
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
-      </property>
-      <property name="text">
-       <string>PushButton</string>
       </property>
       <property name="flat">
        <bool>false</bool>
@@ -323,9 +269,6 @@
         <verstretch>0</verstretch>
        </sizepolicy>
       </property>
-      <property name="text">
-       <string>PushButton</string>
-      </property>
       <property name="flat">
        <bool>false</bool>
       </property>
@@ -338,9 +281,6 @@
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
-      </property>
-      <property name="text">
-       <string>PushButton</string>
       </property>
       <property name="flat">
        <bool>false</bool>
@@ -355,9 +295,6 @@
         <verstretch>0</verstretch>
        </sizepolicy>
       </property>
-      <property name="text">
-       <string>PushButton</string>
-      </property>
       <property name="flat">
        <bool>false</bool>
       </property>
@@ -370,9 +307,6 @@
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
-      </property>
-      <property name="text">
-       <string>PushButton</string>
       </property>
       <property name="flat">
        <bool>false</bool>
@@ -387,9 +321,6 @@
         <verstretch>0</verstretch>
        </sizepolicy>
       </property>
-      <property name="text">
-       <string>PushButton</string>
-      </property>
       <property name="flat">
        <bool>false</bool>
       </property>
@@ -403,9 +334,6 @@
         <verstretch>0</verstretch>
        </sizepolicy>
       </property>
-      <property name="text">
-       <string>PushButton</string>
-      </property>
       <property name="flat">
        <bool>false</bool>
       </property>
@@ -418,9 +346,6 @@
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
-      </property>
-      <property name="text">
-       <string>PushButton</string>
       </property>
       <property name="flat">
        <bool>false</bool>

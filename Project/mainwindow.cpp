@@ -1,13 +1,13 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
-BingoFileParser bingoFile;
+BingoFileParser bingoFileParser;
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
-    allBingos = bingoFile.getAllFiles();
+    allBingos = bingoFileParser.getAllFiles();
     QStringListModel* model = new QStringListModel(this);
     QStringList list;
     for(string vectorString : allBingos){
