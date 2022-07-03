@@ -37,13 +37,15 @@ vector<string> BingoFileParser::getAllFiles(){
     vector<string> allFilesList;
     try {
         string path = "bingos";
-        for (const auto & entry : filesystem::directory_iterator(path))
+        for (const auto & entry : filesystem::directory_iterator(path)){
             allFilesList.insert(allFilesList.end(), (entry.path().string())); //FIX
+        }
     } catch (filesystem::filesystem_error){
         cout << "Filesystem Error Caught";
     } catch (exception) {
         cout << "Exception Caught";
     }
+    return allFilesList;
 }
 
 //string BingoFileParser::giveMeABingoTileText(){

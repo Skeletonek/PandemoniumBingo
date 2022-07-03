@@ -7,11 +7,13 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
-//    allBingos = bingoFile.getAllFiles(); FIX:bingofileparser.cpp:41
+    allBingos = bingoFile.getAllFiles();
     QStringListModel* model = new QStringListModel(this);
     QStringList list;
-    QString text = "Test";
-    list << text;
+    for(string vectorString : allBingos){
+        QString text = QString::fromStdString(vectorString);
+        list << text;
+    }
     model->setStringList(list);
     ui->setupUi(this);
     ui->listView->setModel(model);
@@ -23,6 +25,13 @@ MainWindow::~MainWindow()
 }
 
 void MainWindow::on_pushButton_clicked()
+{
+    bingoDialog = new Bingo(this);
+    bingoDialog->show();
+}
+
+
+void MainWindow::on_listView_clicked(const QModelIndex &index)
 {
     bingoDialog = new Bingo(this);
     bingoDialog->show();
