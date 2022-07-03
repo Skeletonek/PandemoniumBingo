@@ -6,6 +6,7 @@
 #include <filesystem>
 #include <map>
 #include <fstream>
+#include <vector>
 
 using namespace std;
 
@@ -14,7 +15,7 @@ class BingoFileParser
 public:
     BingoFileParser();
     void readFile(string filename);
-    void getAllFiles();
+    vector<string> getAllFiles();
     map<string, string> getData();
     //string giveMeABingoTileText();
 

@@ -18,7 +18,7 @@ Bingo::~Bingo(){
 void Bingo::createBingo(){
     for(int i = 0; i < 5; i++){
         for(int j = 0; j < 5; j++){
-            bingoText[i][j] = bingoFileParser.giveMeABingoTileText();
+            //bingoText[i][j] = bingoFileParser.giveMeABingoTileText();
         }
     }
 }

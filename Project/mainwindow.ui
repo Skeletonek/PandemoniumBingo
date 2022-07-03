@@ -57,7 +57,7 @@
      </font>
     </property>
     <property name="text">
-     <string>Wersja: QTPrototype-25042022</string>
+     <string>Wersja: QTPrototype-3062022</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
@@ -208,8 +208,8 @@ p, li { white-space: pre-wrap; }
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>110</y>
+      <x>0</x>
+      <y>0</y>
       <width>80</width>
       <height>26</height>
      </rect>

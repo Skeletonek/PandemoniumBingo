@@ -33,11 +33,12 @@ void BingoFileParser::readFile(string filename){
  }
 }
 
-void BingoFileParser::getAllFiles(){
+vector<string> BingoFileParser::getAllFiles(){
+    vector<string> allFilesList;
     try {
         string path = "bingos";
         for (const auto & entry : filesystem::directory_iterator(path))
-            cout << entry.path() << endl;
+            allFilesList.insert(allFilesList.end(), (entry.path().string())); //FIX
     } catch (filesystem::filesystem_error){
         cout << "Filesystem Error Caught";
     } catch (exception) {
@@ -50,5 +51,5 @@ void BingoFileParser::getAllFiles(){
 //    string data_tmp = data.find();
 //    data.erase(data.begin() + random);
 //    return data_tmp;
-    return "null";
+//    return "null";
 //}
