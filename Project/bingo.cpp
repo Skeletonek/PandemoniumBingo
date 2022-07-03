@@ -2,8 +2,6 @@
 #include "ui_bingo.h"
 #include "bingofileparser.h"
 
-BingoFileParser bingoFileParser;
-
 Bingo::Bingo(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Bingo){
@@ -23,20 +21,10 @@ void Bingo::createBingo(){
     }
 }
 
-void Bingo::on_button_click(){
-
+void Bingo::on_pushButton11_clicked()
+{
+    ui->pushButton11->setStyleSheet("background-color: red;");
 }
-
-void Bingo::on_pushButton_clicked(){
-    ui->pushButton->setStyleSheet("background-color: red; border: none");
-    bingoFileParser.getAllFiles();
-}
-
-
-void Bingo::on_pushButton_6_clicked(){
-
-}
-
 int Bingo::checkBingo(){
         int bingoCount = 0;
         bool bingoCheck;
@@ -91,3 +79,4 @@ int Bingo::checkBingo(){
         }
         return bingoCheck;
     }
+

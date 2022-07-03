@@ -19,11 +19,7 @@ public:
     int bingoID;
 
 private slots:
-    void on_pushButton_clicked();
-
-    void on_pushButton_6_clicked();
-
-    void on_button_click();
+    void on_pushButton11_clicked();
 
 private:
     Ui::Bingo *ui;

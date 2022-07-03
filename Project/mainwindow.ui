@@ -11,22 +11,26 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>PandemoniumBingo</string>
+   <string>Bingomonium</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="QtResourceFile.qrc">
+    <normaloff>:/icons/logo.xpm</normaloff>:/icons/logo.xpm</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>65</y>
-      <width>161</width>
-      <height>21</height>
+      <x>90</x>
+      <y>30</y>
+      <width>131</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Montserrat</family>
-      <pointsize>13</pointsize>
+      <pointsize>22</pointsize>
       <weight>75</weight>
       <italic>false</italic>
       <bold>true</bold>
@@ -36,10 +40,10 @@
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="text">
-     <string>Pandemonium</string>
+     <string>monium</string>
     </property>
     <property name="alignment">
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
@@ -68,14 +72,14 @@
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>161</width>
-      <height>61</height>
+      <width>101</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Montserrat</family>
-      <pointsize>36</pointsize>
+      <pointsize>24</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -84,7 +88,7 @@
      <string>Bingo</string>
     </property>
     <property name="alignment">
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     <set>Qt::AlignBottom|Qt::AlignRight|Qt::AlignTrailing</set>
     </property>
    </widget>
    <widget class="QListView" name="listView">
@@ -95,6 +99,15 @@
       <width>211</width>
       <height>181</height>
      </rect>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::NoEditTriggers</set>
+    </property>
+    <property name="isWrapping" stdset="0">
+     <bool>true</bool>
+    </property>
+    <property name="viewMode">
+     <enum>QListView::ListMode</enum>
     </property>
    </widget>
    <widget class="QLabel" name="label_5">
@@ -205,21 +218,10 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;-Pierwsze wydanie&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>80</width>
-      <height>26</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>OpenBingo</string>
-    </property>
-   </widget>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="QtResourceFile.qrc"/>
+ </resources>
  <connections/>
 </ui>
