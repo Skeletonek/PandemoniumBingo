@@ -14,14 +14,20 @@ class BingoFileParser
 {
 public:
     BingoFileParser();
-    map<string, string> getData();
 
-    void readFile(string filename);
+    vector<string> getUnformattedData();
+    vector<string> getCategoriesData();
+    vector<string> getValuesData();
+
     vector<string> getAllFiles();
-    //string giveMeABingoTileText();
+    void readFile(string filename);
 
 private:
-    map<string, string> data;
+    vector<string> unformattedData;
+    vector<string> categoriesData;
+    vector<string> valuesData;
+
+    void _convertToFormatedBingoData();
 };
 
 #endif // BINGOFILEPARSER_H

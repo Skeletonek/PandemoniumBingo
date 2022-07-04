@@ -11,9 +11,10 @@ BingoFileParser::BingoFileParser(){
 
 }
 
-map<string, string> BingoFileParser::getData(){
-    return data;
-}
+//getters
+vector<string> BingoFileParser::getUnformattedData(){ return unformattedData; }
+vector<string> BingoFileParser::getCategoriesData(){ return categoriesData; }
+vector<string> BingoFileParser::getValuesData() { return valuesData; }
 
 void BingoFileParser::readFile(string filename){
  string line;
@@ -24,11 +25,10 @@ void BingoFileParser::readFile(string filename){
     while( !file.eof() ){
        getline(file, line);
        if(line != ""){
-       string map_key_str = line.substr(0, line.find("\\"));
-       string map_value_str = line.substr(line.find("\\"), (line.length()-map_key_str.length()));
-       data.insert({map_key_str, map_value_str});
+       unformattedData.push_back(line);
        }
     }
+    _convertToFormatedBingoData();
  }
  else{
      cout << "There was an error while opening a file";
@@ -50,10 +50,11 @@ vector<string> BingoFileParser::getAllFiles(){
     return allFilesList;
 }
 
-//string BingoFileParser::giveMeABingoTileText(){
-//    int random = rand()%2; //Change 2 to fileLineLength
-//    string data_tmp = data.find();
-//    data.erase(data.begin() + random);
-//    return data_tmp;
-//    return "null";
-//}
+void BingoFileParser::_convertToFormatedBingoData(){
+    for(string str : unformattedData){
+        string key_str = str.substr(0, str.find("\\"));
+        string value_str = str.substr(str.find("\\")+1, (str.length()-key_str.length()));
+        categoriesData.push_back(key_str);
+        valuesData.push_back(value_str);
+    }
+}

@@ -19,6 +19,24 @@ public:
     ~Bingo();
     int bingoID;
 
+private:
+    Ui::Bingo *ui;
+
+    bool bingo[5][5];
+    string bingoText[5][5];
+    QPushButton *btnArr[25];
+    QObjectList buttons;
+    vector<string> bingoCategories;
+    vector<string> bingoValues;
+
+    int checkBingo();
+    void createBingo();
+    void fillInButtons();
+    void constructButtons();
+    void wordWrapQLabel();
+
+    void onPushButtonClicked();
+
 private slots:
     void on_pushButton11_clicked();
     void on_pushButton12_clicked();
@@ -45,22 +63,6 @@ private slots:
     void on_pushButton53_clicked();
     void on_pushButton54_clicked();
     void on_pushButton55_clicked();
-private:
-    Ui::Bingo *ui;
-
-    bool bingo[5][5];
-    string bingoText[5][5];
-    QPushButton *btnArr[25];
-    QObjectList buttons;
-    map<string, string> bingoTilesFull;
-    vector<string> bingoTiles;
-
-    int checkBingo();
-    void createBingo();
-    void fillInButtons();
-    void constructButtons();
-
-    void onPushButtonClicked();
 };
 
 #endif // BINGO_H

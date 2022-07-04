@@ -1,6 +1,7 @@
 #include "bingo.h"
 #include "ui_bingo.h"
 #include "bingofileparser.h"
+#include <QLabel>
 
 BingoFileParser bingoFileParse;
 
@@ -8,11 +9,12 @@ Bingo::Bingo(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Bingo){
     bingoFileParse.readFile("bingos/CSGOBingoDB.txt");
-    bingoTilesFull = bingoFileParse.getData();
+    bingoValues = bingoFileParse.getValuesData();
     createBingo();
     ui->setupUi(this);
     constructButtons();
     fillInButtons();
+    //wordWrapQLabel(); Method broken: Don't use
 }
 
 Bingo::~Bingo(){
@@ -51,24 +53,29 @@ void Bingo::constructButtons(){ //Temporary method
         int wrapLen=10;
         QString strCaption = btnArr[i]->text();
         if(strCaption.length()>wrapLen){
-            strCaption=strCaption.left(wrapLen)+"\n"+strCaption.mid(wrapLen,strCaption.length()-wrapLen+1);
+            strCaption=strCaption.left(wrapLen)+"\n"+
+                    strCaption.mid(wrapLen,strCaption.length()-wrapLen+1);
             btnArr[i]->setText(strCaption);
         }
     }
 }
 
+void Bingo::wordWrapQLabel(){
+    for(int i = 0; i < 25; i++){
+        auto label = new QLabel(btnArr[i]->text(), btnArr[i]);
+        label->setWordWrap(true);
+        label->setAlignment(Qt::AlignHCenter);
+    }
+}
+
 void Bingo::createBingo(){
     int random;
-    for(const auto &s : bingoTilesFull){
-        bingoTiles.push_back(s.second);
-    }
-
     for(int i = 0; i < 5; i++){
         for(int j = 0; j < 5; j++){
-            if(bingoTiles.size() != 0){
-            random = rand()%(bingoTiles.size());
-            string tile_tmp = bingoTiles.at(random);
-            bingoTiles.erase(bingoTiles.begin()+random);
+            if(bingoValues.size() != 0){
+            random = rand()%(bingoValues.size());
+            string tile_tmp = bingoValues.at(random);
+            bingoValues.erase(bingoValues.begin()+random);
             bingoText[i][j] = tile_tmp;
             }
         }
@@ -141,9 +148,23 @@ int Bingo::checkBingo(){
     }
 
 void Bingo::onPushButtonClicked(){
+    int indexx = 0; int indexy = 0;
+
     for(QPushButton* btn : btnArr){
         if(btn == sender()){
-            btn->setStyleSheet("background-color: red;");
+            if(!bingo[indexx][indexy]){
+                btn->setStyleSheet("background-color: red;");
+                bingo[indexx][indexy] = true;
+            }
+            else{
+                btn->setStyleSheet("background-color: none;");
+                bingo[indexx][indexy] = false;
+            }
+        }
+        indexy++;
+        if(indexy > 4){
+            indexy = 0;
+            indexx++;
         }
     }
 }
