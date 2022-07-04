@@ -38,3 +38,9 @@ DISTFILES += \
 
 RESOURCES += \
     QtResourceFile.qrc
+
+copydata.commands = $(COPY_DIR) $$PWD/bingos $$OUT_PWD
+first.depends = $(first) copydata
+export(first.depends)
+export(copydata.commands)
+QMAKE_EXTRA_TARGETS += first copydata

@@ -20,6 +20,7 @@ Bingo::~Bingo(){
 }
 
 void Bingo::constructButtons(){ //Temporary method
+    buttons = ui->buttonsGrid->children();
     btnArr[0] = ui->pushButton11;
     btnArr[1] = ui->pushButton12;
     btnArr[2] = ui->pushButton13;
@@ -139,6 +140,36 @@ int Bingo::checkBingo(){
         return bingoCheck;
     }
 
-void Bingo::on_pushButton11_clicked(){
-    ui->pushButton11->setStyleSheet("background-color: red;");
+void Bingo::onPushButtonClicked(){
+    for(QPushButton* btn : btnArr){
+        if(btn == sender()){
+            btn->setStyleSheet("background-color: red;");
+        }
+    }
 }
+
+void Bingo::on_pushButton11_clicked(){onPushButtonClicked();}
+void Bingo::on_pushButton12_clicked(){onPushButtonClicked();}
+void Bingo::on_pushButton13_clicked(){onPushButtonClicked();}
+void Bingo::on_pushButton14_clicked(){onPushButtonClicked();}
+void Bingo::on_pushButton15_clicked(){onPushButtonClicked();}
+void Bingo::on_pushButton21_clicked(){onPushButtonClicked();}
+void Bingo::on_pushButton22_clicked(){onPushButtonClicked();}
+void Bingo::on_pushButton23_clicked(){onPushButtonClicked();}
+void Bingo::on_pushButton24_clicked(){onPushButtonClicked();}
+void Bingo::on_pushButton25_clicked(){onPushButtonClicked();}
+void Bingo::on_pushButton31_clicked(){onPushButtonClicked();}
+void Bingo::on_pushButton32_clicked(){onPushButtonClicked();}
+void Bingo::on_pushButton33_clicked(){onPushButtonClicked();}
+void Bingo::on_pushButton34_clicked(){onPushButtonClicked();}
+void Bingo::on_pushButton35_clicked(){onPushButtonClicked();}
+void Bingo::on_pushButton41_clicked(){onPushButtonClicked();}
+void Bingo::on_pushButton42_clicked(){onPushButtonClicked();}
+void Bingo::on_pushButton43_clicked(){onPushButtonClicked();}
+void Bingo::on_pushButton44_clicked(){onPushButtonClicked();}
+void Bingo::on_pushButton45_clicked(){onPushButtonClicked();}
+void Bingo::on_pushButton51_clicked(){onPushButtonClicked();}
+void Bingo::on_pushButton52_clicked(){onPushButtonClicked();}
+void Bingo::on_pushButton53_clicked(){onPushButtonClicked();}
+void Bingo::on_pushButton54_clicked(){onPushButtonClicked();}
+void Bingo::on_pushButton55_clicked(){onPushButtonClicked();}
