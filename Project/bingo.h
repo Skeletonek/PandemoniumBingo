@@ -33,7 +33,7 @@ private:
     void createBingo();
     void fillInButtons();
     void constructButtons();
-    void wordWrapQLabel();
+    void wordWrapQLabel(QString str, int btnIndex);
 
     void onPushButtonClicked();
 

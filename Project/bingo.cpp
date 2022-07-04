@@ -21,7 +21,28 @@ Bingo::~Bingo(){
     delete ui;
 }
 
-void Bingo::constructButtons(){ //Temporary method
+void Bingo::wordWrapQLabel(QString str, int btnIndex){
+    auto label = new QLabel(str, btnArr[btnIndex]);
+    label->setWordWrap(true);
+    label->setAlignment(Qt::AlignHCenter);
+    label->setFixedSize(btnArr[btnIndex]->size());
+}
+
+void Bingo::createBingo(){
+    int random;
+    for(int i = 0; i < 5; i++){
+        for(int j = 0; j < 5; j++){
+            if(bingoValues.size() != 0){
+            random = rand()%(bingoValues.size());
+            string tile_tmp = bingoValues.at(random);
+            bingoValues.erase(bingoValues.begin()+random);
+            bingoText[i][j] = tile_tmp;
+            }
+        }
+    }
+}
+
+void Bingo::constructButtons(){
     buttons = ui->buttonsGrid->children();
     btnArr[0] = ui->pushButton11;
     btnArr[1] = ui->pushButton12;
@@ -60,33 +81,12 @@ void Bingo::constructButtons(){ //Temporary method
     }
 }
 
-void Bingo::wordWrapQLabel(){
-    for(int i = 0; i < 25; i++){
-        auto label = new QLabel(btnArr[i]->text(), btnArr[i]);
-        label->setWordWrap(true);
-        label->setAlignment(Qt::AlignHCenter);
-    }
-}
-
-void Bingo::createBingo(){
-    int random;
-    for(int i = 0; i < 5; i++){
-        for(int j = 0; j < 5; j++){
-            if(bingoValues.size() != 0){
-            random = rand()%(bingoValues.size());
-            string tile_tmp = bingoValues.at(random);
-            bingoValues.erase(bingoValues.begin()+random);
-            bingoText[i][j] = tile_tmp;
-            }
-        }
-    }
-}
-
 void Bingo::fillInButtons(){
     int k = 0;
     for(int i = 0; i < 5; i++){
         for(int j = 0; j < 5; j++){
-            btnArr[k]->setText(QString::fromStdString(bingoText[i][j]));
+            wordWrapQLabel(QString::fromStdString(bingoText[i][j]), k);
+            //btnArr[k]->setText(QString::fromStdString(bingoText[i][j]));
             k++;
         }
     }

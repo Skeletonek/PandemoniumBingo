@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>700</width>
-    <height>500</height>
+    <width>800</width>
+    <height>600</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -22,8 +22,8 @@
     <rect>
      <x>10</x>
      <y>10</y>
-     <width>461</width>
-     <height>481</height>
+     <width>561</width>
+     <height>581</height>
     </rect>
    </property>
    <layout class="QGridLayout" name="buttonsGrid">
@@ -357,8 +357,8 @@
   <widget class="QListView" name="listView">
    <property name="geometry">
     <rect>
-     <x>480</x>
-     <y>251</y>
+     <x>580</x>
+     <y>350</y>
      <width>211</width>
      <height>241</height>
     </rect>
