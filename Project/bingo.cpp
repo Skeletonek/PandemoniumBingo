@@ -2,6 +2,7 @@
 #include "ui_bingo.h"
 #include "bingofileparser.h"
 #include <QLabel>
+#include <QSizePolicy>
 
 BingoFileParser bingoFileParse;
 
@@ -21,11 +22,16 @@ Bingo::~Bingo(){
     delete ui;
 }
 
+void Bingo::on_Bingo_destroyed(){
+}
+
 void Bingo::wordWrapQLabel(QString str, int btnIndex){
     auto label = new QLabel(str, btnArr[btnIndex]);
     label->setWordWrap(true);
     label->setAlignment(Qt::AlignHCenter);
-    label->setFixedSize(btnArr[btnIndex]->size());
+    label->setGeometry(0, 0, 105, 100); //Find out how to get buttons size
+    label->setMargin(8);
+    label->setStyleSheet("background-color: none;");
 }
 
 void Bingo::createBingo(){
@@ -69,16 +75,6 @@ void Bingo::constructButtons(){
     btnArr[22] = ui->pushButton53;
     btnArr[23] = ui->pushButton54;
     btnArr[24] = ui->pushButton55;
-
-    for(int i = 0; i < 25; i++){
-        int wrapLen=10;
-        QString strCaption = btnArr[i]->text();
-        if(strCaption.length()>wrapLen){
-            strCaption=strCaption.left(wrapLen)+"\n"+
-                    strCaption.mid(wrapLen,strCaption.length()-wrapLen+1);
-            btnArr[i]->setText(strCaption);
-        }
-    }
 }
 
 void Bingo::fillInButtons(){
@@ -194,3 +190,4 @@ void Bingo::on_pushButton52_clicked(){onPushButtonClicked();}
 void Bingo::on_pushButton53_clicked(){onPushButtonClicked();}
 void Bingo::on_pushButton54_clicked(){onPushButtonClicked();}
 void Bingo::on_pushButton55_clicked(){onPushButtonClicked();}
+

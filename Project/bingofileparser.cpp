@@ -19,6 +19,9 @@ vector<string> BingoFileParser::getValuesData() { return valuesData; }
 void BingoFileParser::readFile(string filename){
  string line;
  fstream file;
+ unformattedData.clear();
+ categoriesData.clear();
+ valuesData.clear();
 
  file.open(filename, ios::in | ios::out);
  if(file.good()){

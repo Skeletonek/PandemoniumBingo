@@ -63,6 +63,7 @@ private slots:
     void on_pushButton53_clicked();
     void on_pushButton54_clicked();
     void on_pushButton55_clicked();
+    void on_Bingo_destroyed();
 };
 
 #endif // BINGO_H
